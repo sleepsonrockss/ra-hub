@@ -1,17 +1,20 @@
 import './App.css'
 
+function ShiftItem({shift}) {
+  return(
+    <li>{shift.building}: {shift.start} - {shift.end}</li>
+  )
+}
+
 function App() {
   
-  const shift_1 = {building:'Aspen', start:'Oct 2nd, 7:00 pm', end:'Oct 3rd, 12:00 am', id:'1'}
-  const shift_2 = {building:'HUB', start:'Oct 3rd, 7:00 pm', end:'Oct 4th, 12:00 am', id:'2'}
+  const shift_1 = {id: 1, building:'Aspen', start:'Oct 2nd, 7:00 pm', end:'Oct 3rd, 12:00 am'}
+  const shift_2 = {id: 2, building:'HUB', start:'Oct 3rd, 7:00 pm', end:'Oct 4th, 12:00 am'}
   const shifts = [shift_1, shift_2]
-  const shiftBuilding = shifts.map((s) => <li key={s.id}>{s.building}</li>)
+  const shiftBuilding = shifts.map((s) => <ShiftItem key = {s.id} shift={s}/>)
 
   return (
     <>
-    <p>
-      {shifts[0].building}
-    </p>
     <ul>{shiftBuilding}</ul>
     </>
 )

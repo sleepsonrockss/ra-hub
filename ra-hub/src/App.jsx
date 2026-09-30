@@ -1,10 +1,6 @@
 import './App.css'
+import ShiftItem from './components/ShiftItem'
 
-function ShiftItem({shift}) {
-  return(
-    <li>{shift.building}: {shift.start} - {shift.end}</li>
-  )
-}
 
 function App() {
   

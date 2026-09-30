@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-function RequestSwap(){
+function RequestSwap(){ //Setter for a Button
   const [requested, setRequested] = useState(false)
 
   return(
@@ -11,7 +11,7 @@ function RequestSwap(){
 }
 
 
-function ShiftItem({shift}) {
+function ShiftItem({shift}) { // to display the Shifts in a format
   return(
     <li>{shift.building}: {shift.start} - {shift.end} <RequestSwap /></li>
   )

@@ -6,3 +6,7 @@ export const shifts = [{ id: 1, raId: 1, building: 'Aspen', start: 'Oct 2nd, 7:0
 export const users = [{ id: 1, name: 'Animesh', role: 'RA' },
 { id: 2, name: 'Rose', role: 'RA' },
 { id: 3, name: 'Amelia', role: 'SRA' }]
+
+
+export const deadlines = [{id:1, title:'Payroll Submission', type:'Payroll', dueDate:'Oct 15'},
+    {id:2, title:'Proposal Submission', type:'Proposal', dueDate:'Oct 16'}]

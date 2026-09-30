@@ -5,5 +5,4 @@ export const shifts = [{ id: 1, raId: 1, building: 'Aspen', start: 'Oct 2nd, 7:0
 
 export const users = [{ id: 1, name: 'Animesh', role: 'RA' },
 { id: 2, name: 'Rose', role: 'RA' },
-{ id: 3, name: 'Amelia', role: 'SRA' }
-]
+{ id: 3, name: 'Amelia', role: 'SRA' }]
